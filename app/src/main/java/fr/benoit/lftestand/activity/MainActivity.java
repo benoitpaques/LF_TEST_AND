@@ -19,6 +19,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.squareup.picasso.Picasso;
@@ -196,9 +198,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     private void setMaps(){
         if (map != null && restaurant != null){
+
             map.clear();
+            BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.location);
             LatLng restaurantPosition = new LatLng(restaurant.getGpsLat(), restaurant.getGpsLong());
-            map.addMarker(new MarkerOptions().position(restaurantPosition).title(restaurant.getName()));
+            map.addMarker(new MarkerOptions().position(restaurantPosition).title(restaurant.getName()).icon(icon));
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(restaurantPosition, 14.0f));
             Log.i(TAG, "setting position to " + restaurantPosition);
         }
