@@ -12,7 +12,7 @@ Les données de l'api sont lues avec Retrofit v2 et désérialisées avec GSon
 
 ## Bonus :
 
-L'application fonctionne hors-ligne si elle a déjà été lancé au préalable.
+L'application fonctionne hors-ligne si elle a déjà été lancée au préalable.
 
 
 # MERCI
