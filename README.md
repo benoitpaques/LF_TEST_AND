@@ -1,26 +1,18 @@
 
-# TODO
+# DONE
 
-Le test a pour but de constuire une application android en **Lollipop** avec une **architecture propre**, compatible  **4.0**.
-L'application se compose d'une seule fiche restaurant.
+Voilà mon application compatible 4.0. 
+Il est possible de changer de restaurant en cliquant sur l'image. 
+J'utilise bien une Toolbar sur l'Activity.
+Il me manquait quelques ressources graphiques (icône de favori et pin sur la carte).
+Les données de l'api sont lues avec Retrofit v2 et désérialiser avec GSon
 
-
-## La Fiche
-
-- La fiche restaurant doit utiliser une ToolBar.
-- La vue respecte le design du screenshot.
-- Les données du restaurant sont accessibles via notre [API](http://api.lafourchette.com/api?key=IPHONEPRODEDCRFV&method=restaurant_get_info&id_restaurant=6861)
-- La gestion des favoris n'est pas demandée.
-- D'autres restaurants ? (ex : 40370, 16409, 14163).
-
-![Alt Exemple](https://github.com/pcolet/LF_TEST_AND_WPL/blob/master/fiche.png)
 
 
 
 ## Bonus :
 
-- Compatibilité tablette.
-- Gestion du mode Offline.
+L'application fonctionne hors-ligne si elle a déjà été lancée au préalable.
 
 
-# BON COURAGE
+# MERCI
